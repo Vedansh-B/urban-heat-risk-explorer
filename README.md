@@ -1,13 +1,13 @@
 # 🌍 Toronto Heat Risk Dashboard
 
 An interactive web application built with [Streamlit](https://streamlit.io/) to visualize and analyze **urban heat risk across Toronto**.
-This tool combines **satellite data** (land surface temperature, vegetation cover) with **demographic and socio-economic indicators** to highlight neighborhoods most vulnerable to extreme heat.
+This tool combines **satellite data** (land surface temperature, vegetation cover) with **demographic and socio-economic indicators** to highlight neighbourhoods most vulnerable to extreme heat.
 
 ---
 
 ## 🚀 Live Demo
 
-👉 Try it here: [Toronto Heat Risk Dashboard](https://toronto-heat-risk-dashboard.streamlit.app/)
+Try it here: [Toronto Heat Risk Dashboard](https://toronto-heat-risk-dashboard.streamlit.app/) (Please note that the application may take a moment to wake up if idle)
 
 ![App Screenshot](data/processed/app-screenshot.jpg)
 
@@ -27,8 +27,8 @@ This tool combines **satellite data** (land surface temperature, vegetation cove
 ## 📊 Data Sources
 
 - **NASA AppEEARS** – MODIS LST & NDVI satellite data
-- **City of Toronto Open Data** – Neighborhood boundaries, demographics
-- **Statistics Canada Census 2021** – Socio-economic indicators
+- **City of Toronto Open Data** – Neighbourhood boundaries, demographics
+- **Statistics Canada Census 2021** – Socio-economic factors
 
 ---
 
@@ -38,19 +38,17 @@ This tool combines **satellite data** (land surface temperature, vegetation cove
 - **Data Processing:** Pandas, GeoPandas, Rasterio, NumPy
 - **Visualization:** Folium / Leafmap, Matplotlib
 - **Deployment:** Streamlit Community Cloud
-- [PLACEHOLDER: add any other major tools you used (e.g., Shapely, AppEEARS API, PyProj)]
-
 ---
 
 ## 📂 Project Structure
 
 ```plaintext
-urban-heat-risk-explorer/
+toronto-heat-risk-dashboard/
 │
 ├── app.py                  # Main Streamlit app
 ├── requirements.txt        # Project dependencies
 ├── data/                   # Input datasets (LST, NDVI, census)
-├── utils/                  # Helper scripts (data loading, preprocessing)
+├── notebooks/              # Helper scripts (data loading, preprocessing)
 └── README.md               # Project documentation
 ```
 
@@ -61,8 +59,8 @@ urban-heat-risk-explorer/
 If you want to run this app locally instead of using the deployed version:
 
 ```bash
-git clone https://github.com/[PLACEHOLDER:your-username]/urban-heat-risk-explorer.git
-cd urban-heat-risk-explorer
+git clone https://github.com/Vedansh-B/toronto-heat-risk-dashboard.git
+cd toronto-heat-risk-dashboard
 pip install -r requirements.txt
 ```
 
@@ -80,7 +78,6 @@ streamlit run app.py
 - 📱 Improve mobile responsiveness
 - 📈 Incorporate additional risk factors (air quality, housing type, building age)
 - 🌐 Extend the model to other major world cities for comparative analysis
-- [PLACEHOLDER: add your own planned improvements here]
 
 ---
 
